@@ -33,7 +33,6 @@ export class InfoPaginaService {
         this.http.get('https://angular-html-85021-default-rtdb.europe-west1.firebasedatabase.app/equipo.json')
         .subscribe( resp  => {
           this.equipo = <InfoEquipo[]>(resp);
-          console.log(resp);
         });
    }
 }
